@@ -542,14 +542,14 @@ rotate(${5 * (Math.random() - 1)}deg)`;
 // for sounds animations
 
 var sound1 = new Howl({
-    src: ['assets/sounds/16-Transition-Stone-to-Flag.mp3'],
+    src: ['/chapter43_animated_website/assets/sounds/16-Transition-Stone-to-Flag.mp3'],
     volume: 1,
     html5: true,
 });
 
 
 var sound2 = new Howl({
-    src: ['assets/sounds/10-Zoom-Stone.mp3'],
+    src: ['/chapter43_animated_website/assets/sounds/10-Zoom-Stone.mp3'],
     volume: 1,
     html5: true,
 });
@@ -611,9 +611,9 @@ bar3.addEventListener('click', function(e) {
             $(".bar").css("background-color", "#000");
             $(".bar").css("background", "#000");
             $(".bar").css("background", "#000");
-            document.getElementById("img_bolt").src = "../assets/images/thin_bolt_black.png";
-            document.getElementById("main_logo_left").src = "../assets/Data/Logo/6-01.png";
-            document.getElementById("menu_icon_right").src = "../assets/images/burger2.svg";
+            document.getElementById("img_bolt").src = "/chapter43_animated_website/assets/images/thin_bolt_black.png";
+            document.getElementById("main_logo_left").src = "/chapter43_animated_website/assets/Data/Logo/6-01.png";
+            document.getElementById("menu_icon_right").src = "/chapter43_animated_website/assets/images/burger2.svg";
 
         }, 2900);
 
