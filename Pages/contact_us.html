@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us™</title>
+    <link rel="icon" href="../assets/Data/Logo/5-01.png" type="image/icon type"/>
+    <link rel="stylesheet" href="../assets/css/contact_us.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap-grid.min.css" integrity="sha512-q0LpKnEKG/pAf1qi1SAyX0lCNnrlJDjAvsyaygu07x8OF4CEOpQhBnYiFW6YDUnOOcyAEiEYlV4S9vEc6akTEw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body id="body">
+    <div class="img_l hide_before_loader">
+        <img src="../assets/Data/Logo/3-01.png" class="hide_before_loader" alt="logo" />
+    </div>
+    <div class="loader">
+    </div>
+    <div class="header_custom hide_before_loader">
+        <div class="main_logo hide_before_loader">
+            <img src="../assets/Data/Logo/5-01.png" alt="logo" />
+        </div>
+        <div class="Menu hide_before_loader" data-component="Menu">
+            <button class="Menu-btn" type="button">
+                <p class="Menu-btn-label">
+                    <img src="../assets/images/burger.svg" alt="menu icon" />
+                </p>
+            </button>
+            <div class="main_nav">
+                <div class="close_icon">
+                    <div>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="list">
+                                        <a href="../index.html">Home</a>
+
+                    
+                    <a href="case_study.html">Case Study</a>
+                    <a href="who_we_are.html">Who We Are</a>
+                    <a href="contact_us.html">Contact</a>
+                    <a href="https://github.com/Ayyan420">Owner</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video_bg">
+        <video autoplay muted id="myVideo">
+            <source src="" id="myVideosrc" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+    <div class="custom_overlay">
+        <div class="center_section_contact_us">
+            <div class="main_center_all">
+                <div class="center_all">
+                    <a target="_blank" href="mailto:contact@chapter43.com">
+                        <h1>contact@chapter43.com</h1>
+                        <div class="empty_div"></div>
+                    </a>
+                </div>
+                <div class="bottom_custom_links">
+                    <a target="_blank" href="#twitter">
+                        <h2 class="twi">Twitter</h2>
+                    </a>
+                    <a target="_blank" href="#instagram">
+                        <h2 class="ins">Instagram</h2>
+                    </a>
+                    <a target="_blank" href="#linkedin">
+                        <h2 class="link">Linkedin</h2>
+                    </a>
+                    <a target="_blank" href="#facebook">
+                        <h2 class="fac">Facebook</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_line_pre">
+            <a href="https://goo.gl/maps/Lo5SLqBUKCxpNDTJ6" target="_blank" class="link_o_g_m">
+                <h5>3538 Aquinas Avenue,</h5>
+                <h5>Mississauga, ON</h5>
+                <h5>Canada</h5>
+            </a>
+        </div>
+         <div class="watermark_eusol_main bottom_line_end">
+                        <div class="emaillink_custom">
+                            <a class="watermark_eusol" target="_blank" href="https://eusol.net">
+                                <h1>Powered By EUSOL </h1>
+                            </a>
+                        </div>
+                    </div>
+                    
+        <div class="bottom_line_end">
+            <div class="lcaition_g_m">
+                <a href="tel:(+1) 450-954-0900" target="_blank" class="phone_custom">
+                    <h5>(+1) 450-954-0900</h5>
+                </a>
+            </div>
+            <div class="emaillink_custom">
+                <a target="_blank" href="mailto:contact@chapter43.com">
+                    <h1>careers@chapter43.com</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script async>
+    function loaderSpinner() {
+        $(window).on('load', function() {
+            var loader = $('.loader');
+            var loader1 = $('.img_l');
+            var wHeight = $(window).height();
+            var wWidth = $(window).width();
+            var i = 0;
+            /*Center loader on half screen */
+            loader.css({
+                top: wHeight / 2 - 2.5,
+                left: wWidth / 2 - 200
+            })
+
+            do {
+                loader.animate({
+                    width: i
+                }, 10)
+                i += 3;
+            } while (i <= 400)
+            if (i === 402) {
+                loader.animate({
+                    left: 0,
+                    width: '100%'
+                })
+                loader.animate({
+                    top: '0',
+                    height: '100vh'
+                })
+            }
+
+            /* This line hide loader and show content */
+            setTimeout(function() {
+                $('.hide_before_loader').fadeIn("fast");
+                (loader).delay(100).fadeOut("fast");
+                /*Set time in milisec */
+            }, 3500);
+
+            setTimeout(function() {
+                $('.img_l').slideUp("slow");
+            }, 5500);
+        });
+
+    }
+
+    loaderSpinner();
+    </script>
+    <script type="text/javascript" src="../assets/contact_us.js"></script>
+</body>
+
+</html>

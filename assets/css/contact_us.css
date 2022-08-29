@@ -1,0 +1,1568 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Playfair+Display:ital@1&display=swap&family=Montserrat:wght@800');
+
+
+
+.hide_before_loader {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*overflow-y: hidden !important;*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100% !important;
+    /*overflow-y: hidden !important;*/
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.font-exo {
+    font-family: "Exo 2", sans-serif;
+}
+
+.font-space-mono {
+    font-family: "Space Mono", monospace;
+}
+
+.dg.ac {
+    display: none;
+}
+
+
+a {
+    cursor: pointer;
+}
+
+body {
+    background: #f3f1f5;
+
+}
+
+
+.bolt_ic i {
+    cursor: pointer;
+    margin-top: 5px;
+
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.img_l {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 22222222222;
+    background: #000;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_l img {
+    -webkit-animation: zoomin 5s linear;
+    animation: zoomin 5s linear;
+    animation-fill-mode: forwards;
+    width: 25%;
+}
+
+@-webkit-keyframes zoomin {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.loader {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    height: 3px;
+    background-color: #fff;
+    color: #fff;
+    position: absolute;
+    z-index: 3423432323;
+
+    margin: 0 auto;
+    display: block;
+}
+
+
+.main_logo img {
+    width: 50px;
+}
+
+.header_custom {
+    margin-left: 60px;
+    position: fixed;
+    top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 0 20px;*/
+    z-index: 22222;
+}
+
+.Menu {
+    margin-right: 100px;
+}
+
+.Menu-btn {
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    border: none;
+}
+
+
+
+.Menu-btn-label img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    /*position: fixed;*/
+    /*top: 5%;*/
+    width: 28px;
+    /*left: 96%;*/
+}
+
+.main_nav .list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_nav .list a {
+    /*background: linear-gradient(to right, #fff, #fff 50%,  rgba(255, 255, 255, 0.7) 50%);*/
+    /*background-clip: text;*/
+    /*-webkit-background-clip: text;*/
+    /*-webkit-text-fill-color: transparent;*/
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 2475ms ease;
+    text-decoration: none;
+    font-family: 'Montserrat',
+        sans-serif;
+    text-transform: uppercase;
+    padding: 15px 0;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 65px;
+
+}
+
+
+.main_nav .list a:first-child {
+    padding-top: 0px !important;
+    margin-top: -70px !important;
+}
+
+.main_nav .list a:hover {
+    /*transition: .3s all ease-in-out;*/
+    /*background: url('https://i.ibb.co/MPcgPJY/photo-1572451968507-b92ba4e17f19-11zon.jpg') repeat-y;*/
+    /*background: url('../images/bg.jpeg') repeat-y;*/
+    /*background: url('/c43_custom_website/static/src/Assets/images/bg.jpeg') repeat-y;*/
+     background-color: red;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    /*Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    /*/*background-position: 0 100%;*/
+}
+
+.main_nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background: linear-gradient(50deg, #151515, #000000);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 43s ease infinite;
+    -moz-animation: AnimationName 43s ease infinite;
+    -o-animation: AnimationName 43s ease infinite;
+    animation: AnimationName 43s ease infinite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 222222222323;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 61% 0%
+    }
+
+    50% {
+        background-position: 40% 100%
+    }
+
+    100% {
+        background-position: 61% 0%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 61% 0%
+    }
+
+    50% {
+        background-position: 40% 100%
+    }
+
+    100% {
+        background-position: 61% 0%
+    }
+}
+
+@-o-keyframes AnimationName {
+    0% {
+        background-position: 61% 0%
+    }
+
+    50% {
+        background-position: 40% 100%
+    }
+
+    100% {
+        background-position: 61% 0%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 61% 0%
+    }
+
+    50% {
+        background-position: 40% 100%
+    }
+
+    100% {
+        background-position: 61% 0%
+    }
+}
+
+.close_icon {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.close_icon div {
+    padding: 35px 26px 0 20px;
+}
+
+.close_icon i {
+    color: #fff;
+    font-size: 30px;
+    transition: .8s all ease-in-out;
+}
+
+
+.close_icon i:hover {
+    color: #ec1c24;
+    font-size: 30px;
+    transform: rotateZ(-360deg);
+}
+
+.main_nav {
+    display: none;
+}
+
+
+
+
+.center_section_contact_us {
+    font-family: 'Montserrat',
+        sans-serif;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center_section_contact_us a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.main_center_all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bottom_custom_links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.center_section_contact_us h1,
+.center_section_contact_us h2 {
+    font-weight: lighter;
+}
+
+.center_all h1 {
+    font-size: 4rem;
+}
+
+.center_section_contact_us h2 {
+    border-bottom: 3px solid transparent;
+    margin: 0 50px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, .7);
+    transition: 600ms all ease-in-out;
+}
+
+.bottom_custom_links h2.twi:hover {
+    color: rgb(29, 155, 240);
+    border-bottom: 3px solid rgb(29, 155, 240);
+}
+
+.bottom_custom_links h2.ins:hover {
+    color: rgb(237, 73, 86);
+    border-bottom: 3px solid rgb(237, 73, 86);
+}
+
+.bottom_custom_links h2.link:hover {
+    color: #0a66c2;
+    border-bottom: 3px solid #0a66c2;
+}
+
+.bottom_custom_links h2.fac:hover {
+    color: #3b5998;
+    border-bottom: 3px solid #3b5998;
+}
+
+
+
+.bottom_line_end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 93%;
+    z-index: 33334353;
+}
+
+.bottom_line_end a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.emaillink_custom {
+    margin-right: 30px;
+}
+
+.lcaition_g_m {
+    margin-left: 30px;
+
+}
+
+
+
+.emaillink_custom {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+.emaillink_custom h1 {
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.center_all a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.empty_div {
+    margin-top: 15px;
+    background: #fff;
+    width: 70%;
+    height: 2px;
+    border-radius: 90%;
+
+}
+
+.lcaition_g_m div {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: column;
+}
+
+.phone_custom h5 {
+    font-weight: 100;
+}
+
+.bottom_line_pre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 85%;
+    z-index: 33334353;
+    margin-left: 30px;
+}
+
+.bottom_line_pre a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.link_o_g_m h5 {
+    font-weight: 100;
+}
+
+#myVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 20%;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+.custom_overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 1) 80%);
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.watermark_eusol_main {
+    left: 44%;
+    padding: 0px !important;
+    z-index: 222222222222222;
+}
+
+.watermark_eusol_main a {
+    font-family: 'Montserrat',
+        sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    transition: .3s all ease-in-out;
+}
+
+.watermark_eusol_main a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/*header responsive */
+
+
+
+
+
+
+
+@media only screen and (max-width: 3000px) {
+
+    .img_l img {
+        width: 15%;
+    }
+
+    .main_logo img {
+        width: 90px;
+    }
+
+    .Menu-btn-label img {
+        width: 47px;
+    }
+
+    .main_nav .list a {
+        padding: 20px 0;
+        font-size: 105px;
+    }
+
+    .close_icon i {
+        color: #fff;
+        font-size: 50px;
+        transition: .8s all ease-in-out;
+    }
+
+
+
+
+    .close_icon i:hover {
+        color: #ec1c24;
+        font-size: 47px;
+        transform: rotateZ(-360deg);
+    }
+
+    .close_icon div {
+        padding: 75px 96px 0 90px;
+    }
+
+
+    .center_all h1 {
+        font-size: 7rem;
+    }
+
+    .center_section_contact_us h2 {
+        font-size: 25px;
+    }
+
+    .emaillink_custom h1 {
+        font-weight: 100;
+        font-size: 25px;
+    }
+
+
+    .link_o_g_m h5 {
+        font-size: 25px;
+    }
+
+    .phone_custom h5 {
+        font-size: 25px;
+    }
+
+    .header_custom {
+        margin-left: 95px;
+    }
+
+    .Menu {
+        margin-right: 190px;
+    }
+
+    .bottom_line_end {
+        top: 93%;
+        margin-left: 70px;
+    }
+
+    .bottom_line_pre {
+        top: 85%;
+        margin-left: 100px;
+    }
+
+    .emaillink_custom {
+        margin-right: 170px;
+    }
+
+}
+
+@media only screen and (max-width: 2620px) {
+    .main_nav .list a {
+        padding: 20px 0;
+        font-size: 80px;
+    }
+
+    .main_logo img {
+        width: 75px;
+    }
+
+    .Menu-btn-label img {
+        width: 40px;
+    }
+
+    .close_icon i {
+        color: #fff;
+        font-size: 40px;
+        transition: .8s all ease-in-out;
+    }
+
+
+    .close_icon i:hover {
+        color: #ec1c24;
+        font-size: 40px;
+        transform: rotateZ(-360deg);
+    }
+
+    .close_icon div {
+        padding: 70px 96px 0 90px;
+    }
+
+}
+
+@media only screen and (max-width: 2560px) {
+
+    .close_icon div {
+        padding: 68px 98px 0 90px;
+    }
+}
+
+@media only screen and (max-width: 2500px) {
+
+
+    .close_icon div {
+        padding: 68px 100px 0 90px;
+    }
+
+    .center_all h1 {
+        font-size: 6rem;
+    }
+
+    .center_section_contact_us h2 {
+        font-size: 20px;
+    }
+
+    .emaillink_custom h1 {
+        font-weight: 100;
+        font-size: 22px;
+    }
+
+    .link_o_g_m h5 {
+        font-size: 22px;
+    }
+
+    .phone_custom h5 {
+        font-size: 22px;
+    }
+
+}
+
+@media only screen and (max-width: 2400px) {
+
+
+    .close_icon div {
+        padding: 65px 100px 0 90px;
+    }
+
+    .main_nav .list a {
+        padding: 20px 0;
+        font-size: 70px;
+    }
+
+    .close_icon i {
+        color: #fff;
+        font-size: 37px;
+        transition: .8s all ease-in-out;
+    }
+
+
+    .close_icon i:hover {
+        color: #ec1c24;
+        font-size: 37px;
+        transform: rotateZ(-360deg);
+    }
+
+
+    .main_logo img {
+        width: 70px;
+    }
+
+    .Menu-btn-label img {
+        width: 37px;
+    }
+
+}
+
+@media only screen and (max-width: 2300px) {
+
+    .close_icon div {
+        padding: 60px 100px 0 90px;
+    }
+
+    .main_nav .list a {
+        padding: 20px 0;
+        font-size: 60px;
+    }
+
+    .close_icon i {
+        color: #fff;
+        font-size: 35px;
+        transition: .8s all ease-in-out;
+    }
+
+
+    .close_icon i:hover {
+        color: #ec1c24;
+        font-size: 35px;
+        transform: rotateZ(-360deg);
+    }
+
+
+    .main_logo img {
+        width: 65px;
+    }
+
+    .Menu-btn-label img {
+        width: 35px;
+    }
+
+}
+
+
+@media only screen and (max-width: 2200px) {
+    .close_icon div {
+        padding: 57px 74px 0 74px;
+    }
+
+    .center_all h1 {
+        font-size: 5rem;
+    }
+
+    .center_section_contact_us h2 {
+        font-size: 18px;
+    }
+
+    .emaillink_custom h1 {
+        font-weight: 100;
+        font-size: 20px;
+    }
+
+    .link_o_g_m h5 {
+        font-size: 20px;
+    }
+
+    .phone_custom h5 {
+        font-size: 20px;
+    }
+
+    .header_custom {
+        margin-left: 70px;
+    }
+
+    .Menu {
+        margin-right: 140px;
+    }
+
+    .bottom_line_end {
+        top: 93%;
+        margin-left: 45px;
+    }
+
+    .bottom_line_pre {
+        top: 85%;
+        margin-left: 75px;
+    }
+
+    .emaillink_custom {
+        margin-right: 120px;
+    }
+
+}
+
+
+@media only screen and (max-width: 2000px) {
+
+    .close_icon div {
+        padding: 55px 74px 0 74px;
+    }
+
+    .main_nav .list a {
+        padding: 15px 0;
+        font-size: 55px;
+    }
+
+    .close_icon i {
+        color: #fff;
+        font-size: 30px;
+        transition: .8s all ease-in-out;
+    }
+
+
+    .close_icon i:hover {
+        color: #ec1c24;
+        font-size: 30px;
+        transform: rotateZ(-360deg);
+    }
+
+
+    .main_logo img {
+        width: 55px;
+    }
+
+    .Menu-btn-label img {
+        width: 32px;
+    }
+}
+
+@media only screen and (max-width: 1950px) {
+    .main_logo img {
+        width: 58px;
+    }
+}
+
+@media only screen and (max-width: 1860px) {
+
+
+    .center_all h1 {
+        font-size: 4.5rem;
+    }
+
+    .center_section_contact_us h2 {
+        font-size: 15px;
+    }
+
+    .emaillink_custom h1 {
+        font-weight: 100;
+        font-size: 17px;
+    }
+
+    .link_o_g_m h5 {
+        font-size: 17px;
+    }
+
+    .phone_custom h5 {
+        font-size: 17px;
+    }
+
+}
+
+@media only screen and (max-width: 1800px) {
+
+
+    .close_icon div {
+        padding: 48px 74px 0 74px;
+    }
+
+    .main_nav .list a {
+        padding: 15px 0;
+        font-size: 50px;
+    }
+
+    .close_icon i {
+        color: #fff;
+        font-size: 27px;
+        transition: .8s all ease-in-out;
+    }
+
+
+    .close_icon i:hover {
+        color: #ec1c24;
+        font-size: 27px;
+        transform: rotateZ(-360deg);
+    }
+
+
+    .main_logo img {
+        width: 50px;
+    }
+
+    .Menu-btn-label img {
+        width: 28px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1720px) {
+    .close_icon div {
+        padding: 45px 74px 0 74px;
+    }
+}
+
+
+@media only screen and (max-width: 1600px) {
+
+    .close_icon div {
+        padding: 48px 74px 0 74px;
+    }
+
+    .main_nav .list a {
+        padding: 10px 0;
+        font-size: 45px;
+    }
+
+    .close_icon i {
+        color: #fff;
+        font-size: 25px;
+        transition: .8s all ease-in-out;
+    }
+
+
+    .close_icon i:hover {
+        color: #ec1c24;
+        font-size: 25px;
+        transform: rotateZ(-360deg);
+    }
+
+
+    .main_logo img {
+        width: 45px;
+    }
+
+    .Menu-btn-label img {
+        width: 25px;
+    }
+
+    .close_icon div {
+        padding: 42px 74px 0 74px;
+    }
+
+
+    .center_all h1 {
+        font-size: 3.8rem;
+    }
+
+    .center_section_contact_us h2 {
+        font-size: 13px;
+    }
+
+    .emaillink_custom h1 {
+        font-weight: 100;
+        font-size: 14px;
+    }
+
+    .link_o_g_m h5 {
+        font-size: 14px;
+    }
+
+    .phone_custom h5 {
+        font-size: 14px;
+    }
+
+    .bottom_custom_links {
+        margin-top: 20px;
+    }
+
+    .center_section_contact_us h2 {
+        margin: 0 40px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1900px) {
+    .watermark_eusol_main {
+        left: 42%;
+    }
+}
+
+
+
+@media only screen and (max-width: 1420px) {
+
+    .close_icon div {
+        padding: 42px 62px 0 62px;
+    }
+
+
+
+    .center_all h1 {
+        font-size: 3.5rem;
+    }
+
+    .center_section_contact_us h2 {
+        font-size: 12px;
+    }
+
+    .emaillink_custom h1 {
+        font-weight: 100;
+        font-size: 12px;
+    }
+
+    .link_o_g_m h5 {
+        font-size: 12px;
+    }
+
+    .phone_custom h5 {
+        font-size: 12px;
+    }
+
+    .bottom_custom_links {
+        margin-top: 20px;
+    }
+
+    .empty_div {
+        margin-top: 10px;
+        background: #fff !important;
+        width: 60%;
+        height: 2px;
+        border-radius: 90%;
+    }
+
+    .center_section_contact_us h2 {
+        margin: 0 20px;
+    }
+
+    .header_custom {
+        margin-left: 60px;
+    }
+
+    .Menu {
+        margin-right: 120px;
+    }
+
+    .bottom_line_end {
+        top: 93%;
+        margin-left: 35px;
+    }
+
+    .bottom_line_pre {
+        top: 87%;
+        margin-left: 65px;
+    }
+
+    .emaillink_custom {
+        margin-right: 100px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1250px) {
+
+
+
+
+    .center_all h1 {
+        font-size: 3rem;
+    }
+
+    .center_section_contact_us h2 {
+        font-size: 10px;
+    }
+
+    .emaillink_custom h1 {
+        font-weight: 100;
+        font-size: 10px;
+    }
+
+    .link_o_g_m h5 {
+        font-size: 10px;
+    }
+
+    .phone_custom h5 {
+        font-size: 10px;
+    }
+
+    .bottom_custom_links {
+        margin-top: 15px;
+    }
+
+    .empty_div {
+        margin-top: 10px;
+        background: black;
+        width: 70%;
+        height: 2px;
+        border-radius: 100%;
+    }
+
+    .center_section_contact_us h2 {
+        margin: 0 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1040px) {
+
+    .close_icon div {
+        padding: 42px 52px 0 52px;
+    }
+
+    .main_nav .list a {
+        padding: 10px 0;
+        font-size: 40px;
+    }
+
+    .header_custom {
+        margin-left: 50px;
+    }
+
+    .Menu {
+        margin-right: 100px;
+    }
+
+    .bottom_line_end {
+        top: 93%;
+        margin-left: 25px;
+    }
+
+    .bottom_line_pre {
+        top: 85%;
+        margin-left: 55px;
+    }
+
+    .emaillink_custom {
+        margin-right: 80px;
+    }
+
+    .watermark_eusol_main {
+        left: 43%;
+    }
+
+}
+
+
+@media only screen and (max-width: 950px) {
+
+    .center_all h1 {
+        font-size: 2.5rem;
+    }
+
+    .center_section_contact_us h2 {
+        font-size: 9px;
+    }
+
+    .emaillink_custom h1 {
+        font-weight: 100;
+        font-size: 9px;
+    }
+
+    .link_o_g_m h5 {
+        font-size: 9px;
+    }
+
+    .phone_custom h5 {
+        font-size: 9px;
+    }
+
+    .bottom_custom_links {
+        margin-top: 15px;
+    }
+
+    .empty_div {
+        margin-top: 10px;
+        background: black;
+        width: 60%;
+        height: 2px;
+        border-radius: 100%;
+    }
+
+    .center_section_contact_us h2 {
+        margin: 0 15px;
+    }
+
+    .bottom_line_pre {
+        top: 89%;
+    }
+
+    .watermark_eusol_main {
+        left: 42%;
+    }
+
+}
+
+@media only screen and (max-width: 810px) {
+    .watermark_eusol_main {
+        left: 41%;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .watermark_eusol_main {
+        left: 40%;
+    }
+}
+
+
+@media only screen and (max-width: 675px) {
+    .watermark_eusol_main {
+        left: 39%;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+
+    .center_all h1 {
+        font-size: 2rem;
+    }
+
+    .center_section_contact_us h2 {
+        font-size: 9px;
+    }
+
+    .emaillink_custom h1 {
+        font-weight: 100;
+        font-size: 8px;
+    }
+
+    .link_o_g_m h5 {
+        font-size: 8px;
+    }
+
+    .phone_custom h5 {
+        font-size: 8px;
+    }
+
+    .bottom_custom_links {
+        margin-top: 15px;
+    }
+
+    .empty_div {
+        margin-top: 10px;
+        background: black;
+        width: 55%;
+        height: 2px;
+        border-radius: 100%;
+    }
+
+    .center_section_contact_us h2 {
+        margin: 0 8px;
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    .main_nav .list a {
+        padding: 10px 0;
+        font-size: 35px;
+    }
+
+    .img_l img {
+        -webkit-animation: zoomin 5s linear;
+        animation: zoomin 5s linear;
+        animation-fill-mode: forwards;
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .watermark_eusol_main {
+        left: 38%;
+    }
+}
+
+
+@media only screen and (max-width: 540px) {
+    .watermark_eusol_main {
+        left: 36%;
+    }
+}
+
+
+@media only screen and (max-width: 510px) {
+    .watermark_eusol_main {
+        left: 35%;
+    }
+
+    .watermark_eusol_main a {
+        font-size: 7px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .center_all h1 {
+        font-size: 1.5rem;
+    }
+
+    .center_section_contact_us h2 {
+        font-size: 8px;
+    }
+
+    .emaillink_custom h1 {
+        font-weight: 100;
+        font-size: 8px;
+    }
+
+    .link_o_g_m h5 {
+        font-size: 8px;
+    }
+
+    .phone_custom h5 {
+        font-size: 8px;
+    }
+
+    .bottom_custom_links {
+        margin-top: 10px;
+    }
+
+    .empty_div {
+        margin-top: 10px;
+        background: black;
+        width: 55%;
+        height: 2px;
+        border-radius: 100%;
+    }
+
+    .center_section_contact_us h2 {
+        margin: 0 5px;
+    }
+
+}
+
+
+@media only screen and (max-width: 470px) {
+    .watermark_eusol_main {
+        left: 33.5%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+
+    .main_nav .list a {
+        padding: 10px 0;
+        font-size: 30px;
+    }
+
+    .header_custom {
+        margin-left: 21px;
+    }
+
+    .Menu {
+        margin-right: 40px;
+    }
+
+    .bottom_line_end {
+        top: 95%;
+        margin-left: -4px;
+    }
+
+    .bottom_line_pre {
+        top: 91%;
+        margin-left: 26px;
+    }
+
+    .emaillink_custom {
+        margin-right: 20px;
+    }
+
+    .close_icon div {
+        padding: 39px 24px 0 24px;
+    }
+
+
+    .main_logo img {
+        width: 40px;
+    }
+
+    .Menu-btn-label img {
+        width: 23px;
+    }
+
+    .close_icon i {
+        color: #fff;
+        font-size: 23px;
+        transition: .8s all ease-in-out;
+    }
+
+
+    .close_icon i:hover {
+        color: #ec1c24;
+        font-size: 23px;
+        transform: rotateZ(-360deg);
+    }
+
+
+    .watermark_eusol_main {
+        left: 38%;
+    }
+
+    .watermark_eusol_main .emaillink_custom a {
+        font-size: 6px;
+    }
+}
+
+
+@media only screen and (max-width: 390px) {
+
+    .center_all h1 {
+        font-size: 1.2rem;
+    }
+
+    .center_section_contact_us h2 {
+        font-size: 8px;
+    }
+
+    .emaillink_custom h1 {
+        font-weight: 100;
+        font-size: 8px;
+    }
+
+    .link_o_g_m h5 {
+        font-size: 8px;
+    }
+
+    .phone_custom h5 {
+        font-size: 8px;
+    }
+
+    .bottom_custom_links {
+        margin-top: 10px;
+    }
+
+    .empty_div {
+        margin-top: 10px;
+        background: black;
+        width: 80%;
+        height: 2px;
+        border-radius: 100%;
+    }
+
+    .center_section_contact_us h2 {
+        margin: 0 5px;
+    }
+
+
+}
+
+@media only screen and (max-width: 370px) {
+
+    .watermark_eusol_main {
+        left: 37%;
+
+    }
+
+    .watermark_eusol_main .emaillink_custom a {
+        font-size: 6px;
+    }
+
+}
+
+
+@media only screen and (max-width: 350px) {
+    .watermark_eusol_main {
+        left: 35.5%;
+
+    }
+
+    .watermark_eusol_main .emaillink_custom a {
+        font-size: 6px;
+    }
+}
+
+@media only screen and (max-width: 337px) {
+    .watermark_eusol_main {
+        left: 34%;
+    }
+
+    .watermark_eusol_main .emaillink_custom a {
+        font-size: 5px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .watermark_eusol_main {
+        left: 33%;
+    }
+
+    .watermark_eusol_main .emaillink_custom a {
+        font-size: 4px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 320px) {
+    .main_nav .list a {
+        padding: 10px 0;
+        font-size: 25px;
+    }
+
+    .watermark_eusol_main {
+        left: 32%;
+    }
+}
+
+
+@media only screen and (max-width: 315px) {
+    .main_nav .list a {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+
+    .center_all h1 {
+        font-size: 1rem;
+    }
+
+    .center_section_contact_us h2 {
+        font-size: 8px;
+    }
+
+    .emaillink_custom h1 {
+        font-weight: 100;
+        font-size: 8px;
+    }
+
+    .link_o_g_m h5 {
+        font-size: 8px;
+    }
+
+    .phone_custom h5 {
+        font-size: 8px;
+    }
+
+    .bottom_custom_links {
+        margin-top: 10px;
+    }
+
+    .empty_div {
+        margin-top: 10px;
+        background: black;
+        width: 90%;
+        height: 2px;
+        border-radius: 100%;
+    }
+
+    .center_section_contact_us h2 {
+        margin: 0 5px;
+    }
+
+
+    .watermark_eusol_main {
+        left: 31.5%;
+    }
+
+    .watermark_eusol_main .emaillink_custom a {
+        font-size: 3px;
+    }
+
+}

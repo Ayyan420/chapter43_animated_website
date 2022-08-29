@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Study™</title>
+     <link rel="icon" href="../assets/Data/Logo/5-01.png" type="image/icon type"/>
+    <script src="https://raw.githubusercontent.com/JohnBlazek/codepen-resources/master/3d-carousel/js/libs.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/utils/Draggable.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://threejs.org/examples/js/lights/RectAreaLightUniformsLib.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css" integrity="sha512-9NyfC2Lx+faLve4B168pWgTEHH3T50NBfVLF1aldvQxvwxjYdNNu7HQQKOehQW6r5v1r9QWDUe1BSFQPMbB5fw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/case.css" />
+</head>
+
+<body><!-- 
+    <div class="img_l hide_before_loader">
+        <img src="../assets/Data/Logo/3-01.png" class="hide_before_loader" alt="logo" />
+    </div> -->
+    <div class="loader">
+    </div>
+    <div class="main_full hide_before_loader">
+        <div class="header_custom hide_before_loader">
+            <div class="main_logo hide_before_loader">
+            <img src="../assets/Data/Logo/5-01.png" alt="logo" />
+                
+            </div>
+            <div class="center_title">
+                <h1 class="hide_before_loader">Case Study</h1>
+            </div>
+            <div class="Menu hide_before_loader" data-component="Menu">
+            <button class="Menu-btn" type="button">
+                <p class="Menu-btn-label">
+                    <img src="../assets/images/burger.svg" alt="menu icon" />
+                </p>
+            </button>
+            <div class="main_nav">
+                <div class="close_icon">
+                    <div>
+                    <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="list">
+                    <a href="../index.html">Home</a>
+
+                    <a href="case_study.html">Case Study</a>
+                    <a href="who_we_are.html">Who We Are</a>
+                    <a href="contact_us.html">Contact</a>
+                    <a href="https://github.com/Ayyan420">Owner</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="contentContainer" class="trans3d hide_before_loader">
+            <section id="carouselContainer" class="trans3d hide_before_loader">
+                <figure id="item1" class="carouselItem trans3d">
+                    <div class="carouselItemInner trans3d">
+                        <img class="first_child" src="https://images.unsplash.com/photo-1635960979766-6937c21c2e78?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Slider pic 1">
+                        <a class="go_to_link" href="https://eusol.net" target="_blank">
+                            <img class="icon_8" src="../assets/images/right.png" />
+                        </a>
+                        <p class="new_title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim fugiat nihil, iure. Dolore saepe voluptatem ratione, atque quia cumque, numquam</p>
+                    </div>
+                </figure>
+                <figure id="item1" class="carouselItem trans3d">
+                    <div class="carouselItemInner trans3d">
+                        <img class="first_child" src="https://images.unsplash.com/photo-1635960979766-6937c21c2e78?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Slider pic 1">
+                        <a class="go_to_link" href="https://eusol.net" target="_blank">
+                            <img class="icon_8" src="../assets/images/right.png" />
+                        </a>
+                        <p class="new_title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim fugiat nihil, iure. Dolore saepe voluptatem ratione, atque quia cumque, numquam</p>
+                    </div>
+                </figure>
+                <figure id="item1" class="carouselItem trans3d">
+                    <div class="carouselItemInner trans3d">
+                        <img class="first_child" src="https://images.unsplash.com/photo-1635960979766-6937c21c2e78?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Slider pic 1">
+                        <a class="go_to_link" href="https://eusol.net" target="_blank">
+                            <img class="icon_8" src="../assets/images/right.png" />
+                        </a>
+                        <p class="new_title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim fugiat nihil, iure. Dolore saepe voluptatem ratione, atque quia cumque, numquam</p>
+                    </div>
+                </figure>
+                <figure id="item1" class="carouselItem trans3d">
+                    <div class="carouselItemInner trans3d">
+                        <img class="first_child" src="https://images.unsplash.com/photo-1635960979766-6937c21c2e78?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Slider pic 1">
+                        <a class="go_to_link" href="https://eusol.net" target="_blank">
+                            <img class="icon_8" src="../assets/images/right.png" />
+                        </a>
+                        <p class="new_title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim fugiat nihil, iure. Dolore saepe voluptatem ratione, atque quia cumque, numquam</p>
+                    </div>
+                </figure>
+                <figure id="item1" class="carouselItem trans3d">
+                    <div class="carouselItemInner trans3d">
+                        <img class="first_child" src="https://images.unsplash.com/photo-1635960979766-6937c21c2e78?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Slider pic 1">
+                        <a class="go_to_link" href="https://eusol.net" target="_blank">
+                            <img class="icon_8" src="../assets/images/right.png" />
+                        </a>
+                        <p class="new_title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim fugiat nihil, iure. Dolore saepe voluptatem ratione, atque quia cumque, numquam</p>
+                    </div>
+                </figure>
+                <figure id="item1" class="carouselItem trans3d">
+                    <div class="carouselItemInner trans3d">
+                        <img class="first_child" src="https://images.unsplash.com/photo-1635960979766-6937c21c2e78?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Slider pic 1">
+                        <a class="go_to_link" href="https://eusol.net" target="_blank">
+                            <img class="icon_8" src="../assets/images/right.png" />
+                        </a>
+                        <p class="new_title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim fugiat nihil, iure. Dolore saepe voluptatem ratione, atque quia cumque, numquam</p>
+                    </div>
+                </figure>
+                <figure id="item1" class="carouselItem trans3d">
+                    <div class="carouselItemInner trans3d">
+                        <img class="first_child" src="https://images.unsplash.com/photo-1635960979766-6937c21c2e78?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Slider pic 1">
+                        <a class="go_to_link" href="https://eusol.net" target="_blank">
+                            <img class="icon_8" src="../assets/images/right.png" />
+                        </a>
+                        <p class="new_title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim fugiat nihil, iure. Dolore saepe voluptatem ratione, atque quia cumque, numquam</p>
+                    </div>
+                </figure>
+                <figure id="item1" class="carouselItem trans3d">
+                    <div class="carouselItemInner trans3d">
+                        <img class="first_child" src="https://images.unsplash.com/photo-1635960979766-6937c21c2e78?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Slider pic 1">
+                        <a class="go_to_link" href="https://eusol.net" target="_blank">
+                            <img class="icon_8" src="../assets/images/right.png" />
+                        </a>
+                        <p class="new_title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim fugiat nihil, iure. Dolore saepe voluptatem ratione, atque quia cumque, numquam</p>
+                    </div>
+                </figure>
+                <figure id="item1" class="carouselItem trans3d">
+                    <div class="carouselItemInner trans3d">
+                        <img class="first_child" src="https://images.unsplash.com/photo-1635960979766-6937c21c2e78?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Slider pic 1">
+                        <a class="go_to_link" href="https://eusol.net" target="_blank">
+                            <img class="icon_8" src="../assets/images/right.png" />
+                        </a>
+                        <p class="new_title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim fugiat nihil, iure. Dolore saepe voluptatem ratione, atque quia cumque, numquam</p>
+                    </div>
+                </figure>
+            </section>
+        </div>
+        <div class="bottom_line_anim">
+            <div class="bar-c">
+                 <div class="bar_img_mute">
+                    <img src="../assets/images/mute.png" alt="mute icon" />
+                </div>
+                <div id="bar-3" class="bar noAnim"></div>
+                <div id="bar-4" class="bar noAnim"></div>
+                <div id="bar-5" class="bar noAnim"></div>
+                <div id="bar-6" class="bar noAnim"></div>
+            </div>
+        </div>
+    </div>
+    <script async>
+    function loaderSpinner() {
+        $(window).on('load', function() {
+            var loader = $('.loader');
+            // var loader1 = $('.img_l');
+            var wHeight = $(window).height();
+            var wWidth = $(window).width();
+            var i = 0;
+            /*Center loader on half screen */
+            loader.css({
+                top: wHeight / 2 - 2.5,
+                left: wWidth / 2 - 200
+            })
+
+            do {
+                loader.animate({
+                    width: i
+                }, 10)
+                i += 3;
+            } while (i <= 400)
+            if (i === 402) {
+                loader.animate({
+                    left: 0,
+                    width: '100%'
+                })
+                loader.animate({
+                    top: '0',
+                    height: '100vh'
+                })
+            }
+
+            /* This line hide loader and show content */
+            setTimeout(function() {
+                $('.hide_before_loader').fadeIn("fast");
+                (loader).delay(100).fadeOut("fast");
+                /*Set time in milisec */
+            }, 3500);
+            //  setTimeout(function() {
+            //     $('.img_l').slideUp("slow");
+            // }, 5500);
+        });
+
+    }
+    loaderSpinner();
+    </script>
+    <script type="text/javascript" src="../case_app.js"></script>
+</body>
+
+</html>
