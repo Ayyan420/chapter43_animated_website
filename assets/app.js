@@ -686,7 +686,7 @@ $(".Menu-btn,.close_icon").on('click', function() {
         }, 3200);
 
         setTimeout(function() {
-            window.location = "/Pages/case_study.html";
+            window.location = "/chapter43_animated_website/Pages/case_study.html";
         }, 3300);
 
     });
