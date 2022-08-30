@@ -627,7 +627,7 @@ bar3.addEventListener('click', function(e) {
 });
 
 $(".bot_click").on('click', function() {
-    window.location = "/";
+    window.location = "https://ayyan420.github.io/chapter43_animated_website/";
 });
 
 $(".Menu-btn,.close_icon").on('click', function() {
